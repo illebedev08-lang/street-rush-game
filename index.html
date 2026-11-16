@@ -2,10 +2,23 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#101820"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="format-detection" content="telephone=no">
-<title>Street Rush — iPhone Safari</title>
+<title>Street Rush 2.3.4 — Online</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;min-height:100%;overflow:hidden;background:#101820;color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;overscroll-behavior:none}#wrap{height:100vh;height:100dvh;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:calc(8px + env(safe-area-inset-top)) calc(8px + env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) calc(8px + env(safe-area-inset-left));gap:8px}#top{width:min(100%,480px);display:flex;justify-content:space-between;align-items:center;font-weight:800;letter-spacing:.4px}#top span{font-size:14px;color:#9fb3c8}#top b{font-size:20px;color:#fff}canvas{display:block;width:min(100%,480px);height:min(calc(100dvh - 150px),760px);max-height:760px;aspect-ratio:2/3;border:2px solid #33495b;border-radius:16px;background:#202b33;box-shadow:0 12px 40px #0008}#controls{width:min(100%,480px);display:flex;justify-content:space-between;gap:16px}button{border:0;border-radius:15px;background:#263b4c;color:#fff;font-size:26px;font-weight:900;min-width:90px;height:58px;box-shadow:inset 0 -4px #142431;touch-action:none}button:active{background:#e5a12b;color:#17212a;transform:translateY(2px)}#hint{font-size:11px;color:#8ea2b4;text-align:center}
-#overlay{position:fixed;inset:0;background:linear-gradient(145deg,#07111df2,#102b3bee);display:flex;align-items:center;justify-content:center;padding:22px;z-index:5}#panel{position:relative;overflow-x:hidden;overflow-y:auto;max-height:calc(100dvh - 28px);width:min(100%,370px);background:linear-gradient(160deg,#20394c,#122331 70%);border:1px solid #547087;border-radius:26px;padding:28px 24px;text-align:center;box-shadow:0 24px 80px #000b}#panel:before{content:"";position:absolute;width:260px;height:260px;border:22px solid #ffffff08;border-radius:50%;top:-145px;right:-90px}#panel .eyebrow{font-size:11px;font-weight:900;letter-spacing:4px;color:#f0a52d;margin-bottom:9px}h1{position:relative;margin:0 0 8px;font-size:36px;letter-spacing:1.5px;font-style:italic}#panel p{color:#c0cfda;line-height:1.45;margin:12px 0}#start{width:100%;background:linear-gradient(180deg,#ffc04b,#e9941e);color:#17212a;font-size:18px;height:56px;margin-top:14px;box-shadow:inset 0 -4px #b66e13}#menuBtn,#garageBtn,#backGarage{width:100%;height:48px;margin-top:10px;font-size:14px;background:#30495c;box-shadow:inset 0 -3px #1a2c3a}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;min-height:100%;overflow:hidden;background:#101820;color:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;overscroll-behavior:none}#wrap{height:100vh;height:100dvh;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:calc(8px + env(safe-area-inset-top)) calc(8px + env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) calc(8px + env(safe-area-inset-left));gap:8px}#top{width:min(100%,480px);display:flex;justify-content:space-between;align-items:center;font-weight:800;letter-spacing:.4px}#top span{font-size:14px;color:#9fb3c8}#top b{font-size:20px;color:#fff}canvas{display:block;width:min(100%,480px);height:min(calc(100dvh - 150px),760px);max-height:760px;aspect-ratio:2/3;border:2px solid #33495b;border-radius:16px;background:#202b33;box-shadow:0 12px 40px #0008}#controls{width:min(100%,480px);display:flex;justify-content:space-between;align-items:center;gap:16px}button{position:relative;z-index:2;pointer-events:auto;cursor:pointer;-webkit-tap-highlight-color:transparent;border:0;border-radius:15px;background:#263b4c;color:#fff;font-size:26px;font-weight:900;min-width:90px;height:58px;box-shadow:inset 0 -4px #142431;touch-action:none}button:active{background:#e5a12b;color:#17212a;transform:translateY(2px)}#hint{font-size:11px;color:#8ea2b4;text-align:center}
+#steeringWheel{display:none;width:138px;height:138px;min-width:138px;margin:4px auto;border:13px solid #202830;border-radius:50%;position:relative;touch-action:none;overflow:hidden;background:radial-gradient(circle at 50% 50%,#48545d 0 13%,#151b20 14% 19%,transparent 20%),conic-gradient(from -5deg,transparent 0deg 8deg,#aeb8bf 8deg 13deg,transparent 13deg 166deg,#aeb8bf 166deg 174deg,transparent 174deg 186deg,#aeb8bf 186deg 194deg,transparent 194deg 347deg,#aeb8bf 347deg 352deg,transparent 352deg 360deg),radial-gradient(circle at 50% 50%,#343f47 0 58%,#11171c 60% 100%);box-shadow:inset 0 0 0 3px #687680,inset 0 5px 9px #ffffff30,0 7px 16px #000a}
+#steeringWheel:before{content:"";position:absolute;left:50%;top:50%;width:39px;height:39px;transform:translate(-50%,-50%);border-radius:50%;border:3px solid #87949d;background:radial-gradient(circle at 35% 30%,#66747e,#202a31 65%,#10161b);box-shadow:0 2px 5px #0009}
+#steeringWheel:after{content:"SR";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:10px;font-weight:900;letter-spacing:1px;color:#e5a12b;text-shadow:0 1px 2px #000}
+#controls.wheel #left,#controls.wheel #right{display:none}#controls.wheel #steeringWheel{display:block}
+#settingsBtn{width:100%;height:46px;margin-top:9px;font-size:14px;background:#30495c;box-shadow:inset 0 -3px #1a2c3a}
+#settingsModal{position:fixed;pointer-events:auto;inset:0;z-index:30;display:none;align-items:center;justify-content:center;padding:20px;background:#050b12ed}
+#settingsCard{width:min(100%,360px);padding:23px 20px;border:1px solid #547087;border-radius:22px;background:linear-gradient(160deg,#20394c,#122331);text-align:left}
+#settingsCard h2{text-align:center;margin:0 0 18px;font-size:24px}
+.settingRow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #ffffff18;color:#e8f0f5;font-size:14px}
+.settingRow select{max-width:155px;background:#101d28;color:#fff;border:1px solid #6c8496;border-radius:9px;padding:9px;font-size:13px}
+.settingRow input[type=checkbox]{width:22px;height:22px;accent-color:#e9a333}
+#musicVolume{width:130px;accent-color:#e9a333}
+#closeSettings{width:100%;height:48px;margin-top:18px;font-size:15px;background:linear-gradient(180deg,#ffc04b,#e9941e);color:#17212a;box-shadow:inset 0 -4px #b66e13}
+#overlay{position:fixed;inset:0;background:linear-gradient(145deg,#07111df2,#102b3bee);display:flex;align-items:center;justify-content:center;padding:22px;z-index:5}#panel{position:relative;overflow-x:hidden;overflow-y:auto;max-height:calc(100dvh - 28px);width:min(100%,370px);background:linear-gradient(160deg,#20394c,#122331 70%);border:1px solid #547087;border-radius:26px;padding:28px 24px;text-align:center;box-shadow:0 24px 80px #000b}#panel:before{pointer-events:none;content:"";position:absolute;width:260px;height:260px;border:22px solid #ffffff08;border-radius:50%;top:-145px;right:-90px}#panel .eyebrow{font-size:11px;font-weight:900;letter-spacing:4px;color:#f0a52d;margin-bottom:9px}h1{position:relative;margin:0 0 8px;font-size:36px;letter-spacing:1.5px;font-style:italic}#panel p{color:#c0cfda;line-height:1.45;margin:12px 0}#start{width:100%;background:linear-gradient(180deg,#ffc04b,#e9941e);color:#17212a;font-size:18px;height:56px;margin-top:14px;box-shadow:inset 0 -4px #b66e13}#menuBtn,#garageBtn,#backGarage{width:100%;height:48px;margin-top:10px;font-size:14px;background:#30495c;box-shadow:inset 0 -3px #1a2c3a}
 #garageBtn{background:#36566b}
 #garageList{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin:14px 0;max-height:290px;overflow:auto;position:relative}
 .carCard{background:#ffffff0c;border:1px solid #ffffff20;border-radius:14px;padding:10px 7px;text-align:center;min-width:0}
@@ -22,7 +35,7 @@
 #leaderboardList{display:none;position:relative;max-height:300px;overflow:auto;margin:12px 0;text-align:left}
 .leaderRow{display:grid;grid-template-columns:28px 34px minmax(0,1fr) auto;gap:8px;align-items:center;padding:10px 8px;border-bottom:1px solid #ffffff18;background:#ffffff08}
 .leaderRank{color:#f4b34c;font-weight:900}.leaderAvatar{font-size:23px}.leaderName{font-size:13px;font-weight:750;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.leaderScore{font-size:13px;color:#f4b34c;font-weight:900}
-#profileModal{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:20px;background:#050b12ed}
+#profileModal{position:fixed;pointer-events:auto;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:20px;background:#050b12ed}
 #profileCard{width:min(100%,360px);padding:23px 20px;border:1px solid #547087;border-radius:22px;background:linear-gradient(160deg,#20394c,#122331);text-align:center}
 #profileCard h2{margin:0 0 8px;font-size:24px}
 #profileCard p{color:#c0cfda;font-size:13px;line-height:1.4}
@@ -33,11 +46,38 @@
 #saveProfileBtn{width:100%;height:48px;font-size:15px;background:linear-gradient(180deg,#ffc04b,#e9941e);color:#17212a;box-shadow:inset 0 -4px #b66e13}
 #profileError{min-height:18px;color:#ff9b8f;font-size:12px;margin-top:8px}
 #onlineStatus{font-size:10px;color:#8ea2b4;margin-top:7px}
+
+/* Responsive menu layout: keep every main-menu control inside the visible screen */
+#overlay{padding:calc(8px + env(safe-area-inset-top)) calc(10px + env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) calc(10px + env(safe-area-inset-left));align-items:center;overflow:hidden}
+#panel{width:min(100%,370px);max-height:calc(100dvh - 16px - env(safe-area-inset-top) - env(safe-area-inset-bottom));padding:clamp(12px,2.2dvh,22px) 18px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+#panel .eyebrow{margin-bottom:4px;font-size:10px;letter-spacing:3px}
+#panel h1{font-size:clamp(25px,6vw,32px);margin:0 0 4px}
+#panel p{font-size:clamp(12px,2.2dvh,14px);line-height:1.3;margin:6px 0}
+#menuStats{gap:8px;margin:8px 0 4px}
+.stat{padding:6px 5px}
+.stat b{font-size:18px}
+.stat span{font-size:9px}
+#panel .small{font-size:10px;margin:5px 0}
+#start{height:43px;min-height:43px;margin-top:7px;font-size:16px}
+#menuBtn,#garageBtn,#backGarage,#profileBtn,#leaderboardBtn,#settingsBtn,#backLeaderboard{height:39px;min-height:39px;margin-top:5px;font-size:12px;border-radius:11px}
+#onlineProfile{font-size:10px;margin-top:5px}
+#onlineStatus{font-size:10px;line-height:1.2;margin-top:3px}
+@media(max-height:650px){
+ #panel{padding:10px 16px;max-height:calc(100dvh - 12px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+ #panel p{margin:4px 0;font-size:11px}
+ #menuStats{margin:5px 0 2px}
+ .stat{padding:4px}
+ .stat b{font-size:16px}
+ #start{height:38px;min-height:38px;margin-top:4px}
+ #menuBtn,#garageBtn,#backGarage,#profileBtn,#leaderboardBtn,#settingsBtn,#backLeaderboard{height:35px;min-height:35px;margin-top:4px}
+}
+
 </style><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head><body>
-<div id="wrap"><div id="top"><div>🏁 STREET RUSH<br><span>2D ARCADE RACING</span></div><div style="text-align:right">СЧЁТ <b id="score">0</b><br><span>РЕКОРД <b id="best">0</b></span><br><span id="environment">☀️ ДЕНЬ</span></div></div><canvas id="game" width="480" height="720"></canvas><div id="controls"><button id="left" aria-label="Влево">◀</button><button id="right" aria-label="Вправо">▶</button></div><div id="hint">Управляй кнопками или клавишами ← → · Избегай машин</div></div>
-<div id="overlay"><div id="panel"><div class="eyebrow">2D ARCADE RACING</div><h1>STREET RUSH</h1><p id="panelText">Почувствуй скорость городских улиц. Обгоняй поток, избегай столкновений и устанавливай новые рекорды!</p><div id="menuStats"><div class="stat"><b id="menuBest">0</b><span>ТВОЙ РЕКОРД</span></div><div class="stat"><b>3</b><span>ПОЛОСЫ</span></div></div><p class="small" id="panelHint">◀ ▶ Управление кнопками на экране или стрелками клавиатуры</p><div id="garageList" style="display:none"></div><button id="start">НАЧАТЬ ГОНКУ</button><button id="garageBtn">🚗 ГАРАЖ</button><button id="profileBtn">👤 ПРОФИЛЬ</button><button id="leaderboardBtn">🏆 ЛУЧШИЕ ИГРОКИ</button><div id="onlineProfile"></div><div id="onlineStatus">Онлайн-таблица подключается после настройки базы данных</div><div id="leaderboardList"></div><button id="menuBtn" style="display:none">В ГЛАВНОЕ МЕНЮ</button><button id="backGarage" style="display:none">НАЗАД</button><button id="backLeaderboard">НАЗАД</button></div></div>
-<div id="profileModal"><div id="profileCard"><h2>ТВОЙ ПРОФИЛЬ</h2><p id="profileIntro">Придумай игровой никнейм и выбери аватар. Профиль будет виден в таблице лучших игроков.</p><input id="nicknameInput" maxlength="16" minlength="3" placeholder="Никнейм (3–16 символов)" autocomplete="nickname"><div id="avatarChoices"></div><button id="saveProfileBtn">СОХРАНИТЬ ПРОФИЛЬ</button><div id="profileError"></div></div></div>
+<div id="wrap"><div id="top"><div>🏁 STREET RUSH<br><span>2D ARCADE RACING · v2.3.4 ONLINE</span></div><div style="text-align:right">СЧЁТ <b id="score">0</b><br><span>РЕКОРД <b id="best">0</b></span><br><span id="environment">☀️ ДЕНЬ</span></div></div><canvas id="game" width="480" height="720"></canvas><div id="controls"><button type="button" id="left" aria-label="Влево">◀</button><button type="button" id="right" aria-label="Вправо">▶</button><button type="button" id="steeringWheel" aria-label="Руль" title="Поворачивай руль влево и вправо"></button></div><div id="hint">Управляй кнопками или клавишами ← → · Избегай машин</div></div>
+<div id="overlay"><div id="panel"><div class="eyebrow">2D ARCADE RACING</div><h1>STREET RUSH</h1><p id="panelText">Почувствуй скорость городских улиц. Обгоняй поток, избегай столкновений и устанавливай новые рекорды!</p><div id="menuStats"><div class="stat"><b id="menuBest">0</b><span>ТВОЙ РЕКОРД</span></div><div class="stat"><b>3</b><span>ПОЛОСЫ</span></div></div><p class="small" id="panelHint">◀ ▶ Управление кнопками на экране или стрелками клавиатуры</p><div id="garageList" style="display:none"></div><button type="button" id="start">НАЧАТЬ ГОНКУ</button><button type="button" id="garageBtn">🚗 ГАРАЖ</button><button type="button" id="profileBtn">👤 ПРОФИЛЬ</button><button type="button" id="leaderboardBtn">🏆 ЛУЧШИЕ ИГРОКИ</button><button type="button" id="settingsBtn">⚙️ НАСТРОЙКИ</button><div id="onlineProfile"></div><div id="onlineStatus">Онлайн-таблица подключается после настройки базы данных</div><div id="leaderboardList"></div><button type="button" id="menuBtn" style="display:none">В ГЛАВНОЕ МЕНЮ</button><button type="button" id="backGarage" style="display:none">НАЗАД</button><button type="button" id="backLeaderboard">НАЗАД</button></div></div>
+<div id="settingsModal"><div id="settingsCard"><h2>⚙️ НАСТРОЙКИ</h2><div class="settingRow"><span>Управление</span><select id="controlMode"><option value="arrows">Кнопки-стрелки</option><option value="wheel">Руль</option></select></div><div class="settingRow"><span>Чувствительность руля <b id="wheelSensitivityValue">5</b></span><input id="wheelSensitivity" type="range" min="1" max="10" step="1" value="5"></div><div class="settingRow"><span>Фоновая музыка</span><input id="musicToggle" type="checkbox" checked></div><div class="settingRow"><span>Громкость</span><input id="musicVolume" type="range" min="0" max="100" value="25"></div><button type="button" id="closeSettings">ГОТОВО</button></div></div>
+<div id="profileModal"><div id="profileCard"><h2>ТВОЙ ПРОФИЛЬ</h2><p id="profileIntro">Придумай игровой никнейм и выбери аватар. Профиль будет виден в таблице лучших игроков.</p><input id="nicknameInput" maxlength="16" minlength="3" placeholder="Никнейм (3–16 символов)" autocomplete="nickname"><div id="avatarChoices"></div><button type="button" id="saveProfileBtn">СОХРАНИТЬ ПРОФИЛЬ</button><div id="profileError"></div></div></div>
 <script>
 (()=>{
 if (window.CanvasRenderingContext2D && !CanvasRenderingContext2D.prototype.roundRect) {
@@ -53,6 +93,8 @@ if (window.CanvasRenderingContext2D && !CanvasRenderingContext2D.prototype.round
 
 const safeGet=(key,fallback='')=>{try{return localStorage.getItem(key) ?? fallback}catch(e){return fallback}};
 const safeSet=(key,value)=>{try{localStorage.setItem(key,String(value))}catch(e){}};
+let controlMode=safeGet('streetRushControl','arrows');let wheelSensitivity=Math.max(1,Math.min(10,+(safeGet('streetRushWheelSensitivity','5')||5)));let musicEnabled=safeGet('streetRushMusic','true')!=='false';let musicVolume=+(safeGet('streetRushMusicVolume','25'));
+let audioCtx=null,musicTimer=null,musicStep=0;
 
 // Supabase project settings are filled in after creating the free database.
 const SUPABASE_URL='https://mzoyqromfrdghspgnxrs.supabase.co';
@@ -138,7 +180,7 @@ async function openLeaderboard(){
  panelText.textContent='Топ игроков STREET RUSH по лучшему результату.';
  panelHint.textContent='Рейтинг обновляется после завершения гонки.';
  document.getElementById('menuStats').style.display='none';garageList.style.display='none';leaderboardList.style.display='block';
- startBtn.style.display='none';garageBtn.style.display='none';profileBtn.style.display='none';leaderboardBtn.style.display='none';menuBtn.style.display='none';backGarage.style.display='none';backLeaderboard.style.display='block';
+ startBtn.style.display='none';garageBtn.style.display='none';profileBtn.style.display='none';leaderboardBtn.style.display='none';settingsBtn.style.display='none';menuBtn.style.display='none';backGarage.style.display='none';backLeaderboard.style.display='block';
  leaderboardList.innerHTML='<div class="small" style="padding:14px">Загружаем рейтинг...</div>';
  if(!db){leaderboardList.innerHTML='<div class="small" style="padding:14px">Онлайн-таблица появится после подключения базы данных.</div>';return;}
  try{
@@ -162,21 +204,26 @@ const c=document.getElementById('game'),ctx=c.getContext('2d'),scoreEl=document.
 const W=480,H=720,road={x:72,w:336},lanes=[128,240,352];let player,traffic,score,speed,spawn,lines,playing=false,last=0,move=0,best=+(safeGet('streetRushBest','0')||0);bestEl.textContent=best;document.getElementById('menuBest').textContent=best;const menuBtn=document.getElementById('menuBtn'),panelText=document.getElementById('panelText'),panelHint=document.getElementById('panelHint');
 const garageBtn=document.getElementById('garageBtn'),backGarage=document.getElementById('backGarage'),garageList=document.getElementById('garageList');
 const profileBtn=document.getElementById('profileBtn'),leaderboardBtn=document.getElementById('leaderboardBtn'),backLeaderboard=document.getElementById('backLeaderboard');
+const controlsEl=document.getElementById('controls'),wheelEl=document.getElementById('steeringWheel'),settingsModal=document.getElementById('settingsModal'),settingsBtn=document.getElementById('settingsBtn');
+const controlModeSelect=document.getElementById('controlMode'),wheelSensitivityInput=document.getElementById('wheelSensitivity'),wheelSensitivityValue=document.getElementById('wheelSensitivityValue'),musicToggle=document.getElementById('musicToggle'),musicVolumeInput=document.getElementById('musicVolume');
 const cars=[
 {id:'starter',name:'Street Classic',need:0,color:'#f2a52b'},
+{id:'kamaz_crane',name:'Автокран КАМАЗ',need:0,color:'#e33b32',type:'crane'},
 {id:'blue',name:'Blue Lightning',need:1000,color:'#268fe8'},
 {id:'green',name:'Night Racer',need:5000,color:'#27b879'},
 {id:'purple',name:'Violet Storm',need:10000,color:'#9865dc'},
-{id:'gold',name:'Gold Legend',need:50000,color:'#f2d34b'}
+{id:'gold',name:'Gold Legend',need:50000,color:'#f2d34b'},
+{id:'verstappen',name:'Red Bull Racing #1',need:15000,color:'#102b55',type:'formula'}
 ];
 let selectedCar=safeGet('streetRushCar','starter')||'starter';
 function selectedColor(){return (cars.find(v=>v.id===selectedCar)||cars[0]).color}
+function applyControlMode(){controlsEl.classList.toggle('wheel',controlMode==='wheel');controlModeSelect.value=controlMode;document.getElementById('hint').textContent=controlMode==='wheel'?'Поворачивай руль влево и вправо · Избегай машин':'Управляй кнопками ◀ ▶ или клавишами ← → · Избегай машин'};
 function renderGarage(){
  garageList.innerHTML='';
  cars.forEach(v=>{
   const unlocked=best>=v.need,chosen=selectedCar===v.id;
   const card=document.createElement('div');card.className='carCard';
-  const swatch=document.createElement('div');swatch.className='carSwatch';swatch.style.background=v.color;card.appendChild(swatch);
+  const swatch=document.createElement('div');swatch.className='carSwatch';swatch.style.background=v.id==='verstappen'?'linear-gradient(90deg,#102b55 0 35%,#e22b32 35% 52%,#f4c542 52% 63%,#102b55 63%)':v.id==='kamaz_crane'?'linear-gradient(135deg,#e33b32 0 48%,#f2f2e9 49% 62%,#252c32 63%)':v.color;card.appendChild(swatch);
   const name=document.createElement('b');name.textContent=v.name;card.appendChild(name);
   const req=document.createElement('small');req.textContent=v.need===0?'Доступна сразу':`Рекорд: ${v.need} очков`;card.appendChild(req);
   const btn=document.createElement('button');btn.textContent=!unlocked?'🔒 ЗАКРЫТА':chosen?'ВЫБРАНА':'ВЫБРАТЬ';btn.disabled=!unlocked||chosen;
@@ -184,12 +231,49 @@ function renderGarage(){
   card.appendChild(btn);garageList.appendChild(card);
  });
 }
-function openGarage(){playing=false;overlay.style.display='flex';leaderboardList.style.display='none';backLeaderboard.style.display='none';profileBtn.style.display='none';leaderboardBtn.style.display='none';document.querySelector('#panel h1').textContent='ГАРАЖ';panelText.textContent='Открывай новые автомобили, набирая очки в гонках. Для разблокировки нужен личный рекорд.';panelHint.textContent=`Твой рекорд: ${best} очков`;document.getElementById('menuStats').style.display='none';garageList.style.display='grid';renderGarage();startBtn.style.display='none';garageBtn.style.display='none';menuBtn.style.display='none';backGarage.style.display='block';}
+function openGarage(){playing=false;overlay.style.display='flex';leaderboardList.style.display='none';backLeaderboard.style.display='none';profileBtn.style.display='none';leaderboardBtn.style.display='none';settingsBtn.style.display='none';document.querySelector('#panel h1').textContent='ГАРАЖ';panelText.textContent='Открывай новые автомобили, набирая очки в гонках. Для разблокировки нужен личный рекорд.';panelHint.textContent=`Твой рекорд: ${best} очков`;document.getElementById('menuStats').style.display='none';garageList.style.display='grid';renderGarage();startBtn.style.display='none';garageBtn.style.display='none';menuBtn.style.display='none';backGarage.style.display='block';}
 function closeGarage(){garageList.style.display='none';startBtn.style.display='block';garageBtn.style.display='block';backGarage.style.display='none';document.getElementById('menuStats').style.display='flex';showMenu();}
 
-function reset(){player={x:240,y:585,w:54,h:92};traffic=[];score=0;speed=5;spawn=0;lines=Array.from({length:10},(_,i)=>i*90);scoreEl.textContent='0';document.getElementById('environment').textContent='☀️ ДЕНЬ';playing=true;overlay.style.display='none';last=performance.now();requestAnimationFrame(loop)}
+function reset(){player={x:240,y:585,w:54,h:92};traffic=[];score=0;speed=5;spawn=0;lines=Array.from({length:10},(_,i)=>i*90);scoreEl.textContent='0';document.getElementById('environment').textContent='☀️ ДЕНЬ';playing=true;overlay.style.display='none';last=performance.now();startMusic();draw();requestAnimationFrame(loop)}
 function rounded(x,y,w,h,r,color){ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill()}
 function car(x,y,w,h,color,playerCar=false){rounded(x+3,y+5,w,h,12,'#0005');rounded(x,y,w,h,12,color);rounded(x+7,y+15,w-14,h*.28,7,playerCar?'#b9e9f5':'#a9c6d4');rounded(x+8,y+h*.58,w-16,h*.19,5,'#182b38');ctx.fillStyle='#fff2b0';ctx.fillRect(x+6,y+5,9,5);ctx.fillRect(x+w-15,y+5,9,5);ctx.fillStyle='#ff4d45';ctx.fillRect(x+6,y+h-9,9,5);ctx.fillRect(x+w-15,y+h-9,9,5);ctx.fillStyle='#111';ctx.fillRect(x-3,y+18,4,18);ctx.fillRect(x+w-1,y+18,4,18);ctx.fillRect(x-3,y+h-30,4,18);ctx.fillRect(x+w-1,y+h-30,4,18)}
+function craneCar(x,y,w,h){
+ // Top-down arcade autocrane on a red KAMAZ-style truck chassis.
+ ctx.save();ctx.translate(x,y);
+ // shadow and chassis
+ ctx.fillStyle='#0007';ctx.fillRect(5,8,w-10,h-2);
+ ctx.fillStyle='#171d22';ctx.fillRect(w*.12,7,w*.76,h-12);
+ // wheels
+ ctx.fillStyle='#080b0e';for(const yy of [17,h-37]){ctx.fillRect(-2,yy,11,23);ctx.fillRect(w-9,yy,11,23)}
+ // red cab and rear crane platform
+ ctx.fillStyle='#d9362e';ctx.beginPath();ctx.roundRect(w*.18,8,w*.64,h*.3,7);ctx.fill();
+ ctx.fillStyle='#a9d2df';ctx.beginPath();ctx.roundRect(w*.25,13,w*.5,h*.16,5);ctx.fill();
+ ctx.fillStyle='#f2f0e7';ctx.fillRect(w*.22,h*.36,w*.56,h*.12);
+ ctx.fillStyle='#d9362e';ctx.fillRect(w*.17,h*.48,w*.66,h*.4);
+ // crane boom, yellow with dark tip, centered lengthwise
+ ctx.save();ctx.translate(w*.5,h*.68);ctx.rotate(-0.12);ctx.fillStyle='#f3c42f';ctx.fillRect(-w*.11,-h*.27,w*.22,h*.48);ctx.fillStyle='#252c32';ctx.fillRect(-w*.07,-h*.29,w*.14,h*.09);ctx.restore();
+ ctx.fillStyle='#f8e7a4';ctx.font='bold 8px Arial';ctx.textAlign='center';ctx.fillText('КРАН',w*.5,h*.55);
+ ctx.fillStyle='#fff';ctx.fillRect(w*.23,h-15,w*.54,4);
+ ctx.restore();
+}
+function formulaCar(x,y,w,h){
+ // Stylized dark-navy Red Bull-inspired single-seater with red/yellow racing accents.
+ ctx.save();ctx.translate(x,y);ctx.fillStyle='#0007';ctx.fillRect(5,8,w-10,h-2);
+ // tyres
+ ctx.fillStyle='#090d12';ctx.fillRect(-2,13,10,24);ctx.fillRect(w-8,13,10,24);ctx.fillRect(-2,h-37,10,24);ctx.fillRect(w-8,h-37,10,24);
+ // front and rear wings
+ ctx.fillStyle='#e5e9ee';ctx.fillRect(-5,h-18,w+10,7);ctx.fillRect(-7,10,w+14,7);ctx.fillStyle='#e32d35';ctx.fillRect(-5,h-18,w+10,2);ctx.fillRect(-7,10,w+14,2);
+ // central chassis and nose
+ ctx.fillStyle='#102b55';ctx.beginPath();ctx.moveTo(w*.34,12);ctx.lineTo(w*.66,12);ctx.lineTo(w*.73,h*.28);ctx.lineTo(w*.62,h*.82);ctx.lineTo(w*.5,h-5);ctx.lineTo(w*.38,h*.82);ctx.lineTo(w*.27,h*.28);ctx.closePath();ctx.fill();
+ // cockpit
+ ctx.fillStyle='#080f1b';ctx.beginPath();ctx.ellipse(w/2,h*.38,w*.19,h*.13,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#6d9dbb';ctx.beginPath();ctx.ellipse(w/2,h*.37,w*.12,h*.08,0,0,Math.PI*2);ctx.fill();
+ // Red/yellow livery stripes
+ ctx.fillStyle='#e32d35';ctx.beginPath();ctx.moveTo(w*.32,h*.23);ctx.lineTo(w*.44,h*.27);ctx.lineTo(w*.5,h*.9);ctx.lineTo(w*.43,h*.76);ctx.closePath();ctx.fill();ctx.fillStyle='#f4c542';ctx.beginPath();ctx.moveTo(w*.65,h*.22);ctx.lineTo(w*.72,h*.3);ctx.lineTo(w*.57,h*.78);ctx.lineTo(w*.54,h*.58);ctx.closePath();ctx.fill();
+ // number 1 on engine cover
+ ctx.fillStyle='#fff';ctx.font='bold 19px Arial';ctx.textAlign='center';ctx.fillText('1',w/2,h*.67);
+ // Red bull-like twin bull silhouettes kept abstract
+ ctx.fillStyle='#e32d35';ctx.beginPath();ctx.arc(w*.36,h*.51,4,0,Math.PI*2);ctx.arc(w*.64,h*.51,4,0,Math.PI*2);ctx.fill();ctx.restore();
+}
 const environments=[
  {name:'☀️ ДЕНЬ',ground:'#286344',road:'#343d45',edge:'#e5e2d2',dash:'#d9d5c5',light:'#e7b64e',effect:'clear'},
  {name:'🌇 ЗАКАТ',ground:'#8a5437',road:'#39343b',edge:'#f3b36b',dash:'#e6a45e',light:'#ffd27a',effect:'sunset'},
@@ -218,7 +302,9 @@ function draw(){
  for(let x of [184,296]){ctx.fillStyle=env.dash;for(let y of lines){ctx.fillRect(x-3,y,6,44)}}
  for(let y=0;y<H;y+=90){ctx.fillStyle=env.light;ctx.fillRect(48,(y+score*2)%H,8,22);ctx.fillRect(424,(y+score*2)%H,8,22)}
  traffic.forEach(t=>car(t.x,t.y,54,92,t.color));
- car(player.x-player.w/2,player.y,player.w,player.h,selectedColor(),true);
+ if(selectedCar==='verstappen')formulaCar(player.x-player.w/2,player.y,player.w,player.h);
+ else if(selectedCar==='kamaz_crane')craneCar(player.x-player.w/2,player.y,player.w,player.h);
+ else car(player.x-player.w/2,player.y,player.w,player.h,selectedColor(),true);
  // Погодные эффекты поверх трассы
  if(env.effect==='rain'){
   ctx.strokeStyle='#b9dce8a8';ctx.lineWidth=2;
@@ -231,11 +317,55 @@ function draw(){
   ctx.fillStyle='#07101b55';ctx.fillRect(road.x,0,road.w,H);
  }
 }
-function loop(now){if(!playing)return;let dt=Math.min((now-last)/16.67,2);last=now;speed=Math.min(11,5+score/220);lines=lines.map(y=>(y+speed*dt)%810);if(move)player.x+=move*7.5*dt;player.x=Math.max(road.x+38,Math.min(road.x+road.w-38,player.x));spawn-=dt;if(spawn<=0){let lane=lanes[Math.floor(Math.random()*3)],colors=['#e94d4d','#4e9fe8','#9b70d6','#e8e8e8','#48b58a'];traffic.push({x:lane-27,y:-110,color:colors[Math.floor(Math.random()*colors.length)]});spawn=Math.max(27,65-score/18)+Math.random()*22}
-traffic.forEach(t=>t.y+=speed*dt);traffic=traffic.filter(t=>t.y<H+110);for(let t of traffic){if(Math.abs(t.x+27-player.x)<43&&t.y+82>player.y+8&&t.y<player.y+player.h-8){gameOver();return}}
-score+=Math.round(dt);scoreEl.textContent=score;draw();requestAnimationFrame(loop)}
-function gameOver(){playing=false;best=Math.max(best,score);safeSet('streetRushBest',best);bestEl.textContent=best;document.getElementById('menuBest').textContent=best;renderGarage();overlay.style.display='flex';document.querySelector('#panel h1').textContent='АВАРИЯ!';panelText.textContent=`Твой результат: ${score}. Машины не прощают ошибок — готов к реваншу?`;panelHint.textContent='Попробуй продержаться дольше и побить рекорд';startBtn.textContent='ЕЩЁ ЗАЕЗД';startBtn.style.display='block';garageBtn.style.display='block';profileBtn.style.display='block';leaderboardBtn.style.display='block';menuBtn.style.display='block';backGarage.style.display='none';backLeaderboard.style.display='none';garageList.style.display='none';leaderboardList.style.display='none';document.getElementById('menuStats').style.display='flex';submitOnlineScore(best)}
-function showMenu(){playing=false;move=0;overlay.style.display='flex';leaderboardList.style.display='none';profileBtn.style.display='block';leaderboardBtn.style.display='block';backLeaderboard.style.display='none';document.querySelector('#panel h1').textContent='STREET RUSH';panelText.textContent='Почувствуй скорость городских улиц. Обгоняй поток, избегай столкновений и устанавливай новые рекорды!';panelHint.textContent='◀ ▶ Управление кнопками на экране или стрелками клавиатуры';startBtn.textContent='НАЧАТЬ ГОНКУ';startBtn.style.display='block';garageBtn.style.display='block';menuBtn.style.display='none';backGarage.style.display='none';garageList.style.display='none';document.getElementById('menuStats').style.display='flex';document.getElementById('menuBest').textContent=best;}
+function loop(now){
+ if(!playing)return;
+ try{
+  const frameTime=Number.isFinite(now)?now:performance.now();
+  let dt=last?Math.min(Math.max((frameTime-last)/16.67,0.25),2):1;
+  last=frameTime;
+  speed=Math.min(11,5+score/220);
+  if(!Array.isArray(lines)||!lines.length)lines=Array.from({length:10},(_,i)=>i*90);
+  lines=lines.map(y=>(y+speed*dt)%810);
+  if(move)player.x+=move*7.5*dt;
+  player.x=Math.max(road.x+38,Math.min(road.x+road.w-38,player.x));
+  spawn-=dt;
+  if(spawn<=0){
+   const lane=lanes[Math.floor(Math.random()*3)],colors=['#e94d4d','#4e9fe8','#9b70d6','#e8e8e8','#48b58a'];
+   traffic.push({x:lane-27,y:-110,color:colors[Math.floor(Math.random()*colors.length)]});
+   spawn=Math.max(27,65-score/18)+Math.random()*22;
+  }
+  traffic.forEach(t=>t.y+=speed*dt);
+  traffic=traffic.filter(t=>t.y<H+110);
+  for(const t of traffic){
+   if(Math.abs(t.x+27-player.x)<43&&t.y+82>player.y+8&&t.y<player.y+player.h-8){gameOver();return;}
+  }
+  score+=Math.max(1,Math.round(dt));
+  scoreEl.textContent=score;
+  draw();
+ }catch(err){
+  console.error('Street Rush frame error:',err);
+  // Keep the game loop alive if a single visual frame fails.
+ }
+ if(playing)requestAnimationFrame(loop);
+}
+function gameOver(){playing=false;best=Math.max(best,score);safeSet('streetRushBest',best);bestEl.textContent=best;document.getElementById('menuBest').textContent=best;renderGarage();overlay.style.display='flex';document.querySelector('#panel h1').textContent='АВАРИЯ!';panelText.textContent=`Твой результат: ${score} очков`;panelHint.textContent='';startBtn.textContent='ЕЩЁ РАЗ';startBtn.style.display='block';garageBtn.style.display='none';profileBtn.style.display='none';leaderboardBtn.style.display='none';settingsBtn.style.display='none';menuBtn.textContent='ГЛАВНОЕ МЕНЮ';menuBtn.style.display='block';backGarage.style.display='none';backLeaderboard.style.display='none';garageList.style.display='none';leaderboardList.style.display='none';document.getElementById('menuStats').style.display='none';submitOnlineScore(best)}
+function showMenu(){playing=false;move=0;overlay.style.display='flex';settingsModal.style.display='none';settingsBtn.style.display='block';leaderboardList.style.display='none';profileBtn.style.display='block';leaderboardBtn.style.display='block';settingsBtn.style.display='block';backLeaderboard.style.display='none';document.querySelector('#panel h1').textContent='STREET RUSH';panelText.textContent='Почувствуй скорость городских улиц. Обгоняй поток, избегай столкновений и устанавливай новые рекорды!';panelHint.textContent='◀ ▶ Управление кнопками на экране или стрелками клавиатуры';startBtn.textContent='НАЧАТЬ ГОНКУ';startBtn.style.display='block';garageBtn.style.display='block';menuBtn.style.display='none';backGarage.style.display='none';garageList.style.display='none';document.getElementById('menuStats').style.display='flex';document.getElementById('menuBest').textContent=best;}
+function openSettings(){playing=false;move=0;controlModeSelect.value=controlMode;wheelSensitivityInput.value=wheelSensitivity;wheelSensitivityValue.textContent=wheelSensitivity;musicToggle.checked=musicEnabled;musicVolumeInput.value=musicVolume;settingsModal.style.display='flex';}
+function closeSettings(){settingsModal.style.display='none';}
+function stopMusic(){if(musicTimer){clearTimeout(musicTimer);musicTimer=null;}}
+function startMusic(){
+ if(!musicEnabled||musicVolume<=0)return;
+ const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+ try{if(!audioCtx)audioCtx=new AC();if(audioCtx.state==='suspended')audioCtx.resume();if(musicTimer)return;
+ const melody=[659.25,783.99,987.77,783.99,587.33,659.25,783.99,659.25,523.25,659.25,783.99,659.25,587.33,523.25,493.88,523.25];
+ const bass=[130.81,130.81,164.81,164.81,146.83,146.83,196.00,196.00];
+ const tick=()=>{if(!musicEnabled||!audioCtx){musicTimer=null;return;}const now=audioCtx.currentTime,vol=musicVolume/100;
+ const osc=audioCtx.createOscillator(),gain=audioCtx.createGain();osc.type='triangle';osc.frequency.value=melody[musicStep%melody.length];gain.gain.setValueAtTime(0.0001,now);gain.gain.exponentialRampToValueAtTime(Math.max(.0002,.045*vol),now+.025);gain.gain.exponentialRampToValueAtTime(.0001,now+.26);osc.connect(gain);gain.connect(audioCtx.destination);osc.start(now);osc.stop(now+.28);
+ if(musicStep%2===0){const b=audioCtx.createOscillator(),g=audioCtx.createGain();b.type='sine';b.frequency.value=bass[(musicStep/2)%bass.length];g.gain.setValueAtTime(.0001,now);g.gain.exponentialRampToValueAtTime(Math.max(.0002,.025*vol),now+.02);g.gain.exponentialRampToValueAtTime(.0001,now+.35);b.connect(g);g.connect(audioCtx.destination);b.start(now);b.stop(now+.36);}
+ musicStep++;musicTimer=setTimeout(tick,300);};tick();
+ }catch(e){console.warn('Audio unavailable',e);}
+}
+function setMusicEnabled(on){musicEnabled=on;safeSet('streetRushMusic',on);if(on){startMusic()}else{stopMusic()}}
 function hold(btn,dir){
  const down=e=>{e.preventDefault();move=dir},up=e=>{e.preventDefault();if(move===dir)move=0};
  if(window.PointerEvent){
@@ -247,7 +377,16 @@ function hold(btn,dir){
   btn.addEventListener('mousedown',down);btn.addEventListener('mouseup',up);btn.addEventListener('mouseleave',up);
  }
 }hold(document.getElementById('left'),-1);hold(document.getElementById('right'),1);
+let wheelPointer=null;function steerFromPointer(e){const r=wheelEl.getBoundingClientRect(),x=e.clientX-(r.left+r.width/2),normalized=Math.max(-1,Math.min(1,x/(r.width*.42))),deadZone=.32-(wheelSensitivity-1)*.026;move=Math.abs(normalized)<deadZone?0:(normalized<0?-1:1);wheelEl.style.transform=`rotate(${normalized*135* (0.65+wheelSensitivity*.07)}deg)`;}
+wheelEl.addEventListener('pointerdown',e=>{e.preventDefault();wheelPointer=e.pointerId;wheelEl.setPointerCapture(e.pointerId);steerFromPointer(e)});
+wheelEl.addEventListener('pointermove',e=>{if(wheelPointer===e.pointerId)steerFromPointer(e)});
+function releaseWheel(e){if(wheelPointer===e.pointerId){wheelPointer=null;move=0;wheelEl.style.transform='rotate(0deg)'}}
+wheelEl.addEventListener('pointerup',releaseWheel);wheelEl.addEventListener('pointercancel',releaseWheel);wheelEl.addEventListener('lostpointercapture',()=>{wheelPointer=null;move=0;wheelEl.style.transform='rotate(0deg)'});
+settingsBtn.onclick=openSettings;document.getElementById('closeSettings').onclick=closeSettings;
+controlModeSelect.addEventListener('change',()=>{controlMode=controlModeSelect.value;safeSet('streetRushControl',controlMode);applyControlMode();});wheelSensitivityInput.addEventListener('input',()=>{wheelSensitivity=+wheelSensitivityInput.value;wheelSensitivityValue.textContent=wheelSensitivity;safeSet('streetRushWheelSensitivity',wheelSensitivity);});
+musicToggle.addEventListener('change',()=>setMusicEnabled(musicToggle.checked));musicVolumeInput.addEventListener('input',()=>{musicVolume=+musicVolumeInput.value;safeSet('streetRushMusicVolume',musicVolume);if(musicEnabled){stopMusic();startMusic();}});
+applyControlMode();wheelSensitivityInput.value=wheelSensitivity;wheelSensitivityValue.textContent=wheelSensitivity;musicToggle.checked=musicEnabled;musicVolumeInput.value=musicVolume;
 document.addEventListener('contextmenu',e=>e.preventDefault());
 document.addEventListener('gesturestart',e=>e.preventDefault(),{passive:false});
-window.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='a')move=-1;if(e.key==='ArrowRight'||e.key==='d')move=1});window.addEventListener('keyup',e=>{if(['ArrowLeft','ArrowRight','a','d'].includes(e.key))move=0});startBtn.addEventListener('click',()=>{document.querySelector('#panel h1').textContent='STREET RUSH';menuBtn.style.display='none';reset()});menuBtn.addEventListener('click',showMenu);garageBtn.addEventListener('click',openGarage);backGarage.addEventListener('click',closeGarage);profileBtn.addEventListener('click',()=>openProfileEditor(false));leaderboardBtn.addEventListener('click',openLeaderboard);backLeaderboard.addEventListener('click',showMenu);document.getElementById('saveProfileBtn').addEventListener('click',saveProfile);try{draw();}catch(err){console.error('Street Rush render error:',err);ctx.fillStyle='#263b4c';ctx.fillRect(0,0,W,H);ctx.fillStyle='#fff';ctx.font='bold 24px system-ui';ctx.textAlign='center';ctx.fillText('STREET RUSH',W/2,H/2);ctx.font='16px system-ui';ctx.fillText('Нажми «Начать гонку»',W/2,H/2+36);}initOnline();})();
+window.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='a')move=-1;if(e.key==='ArrowRight'||e.key==='d')move=1});window.addEventListener('keyup',e=>{if(['ArrowLeft','ArrowRight','a','d'].includes(e.key))move=0});startBtn.onclick=()=>{document.querySelector('#panel h1').textContent='STREET RUSH';menuBtn.style.display='none';reset()};menuBtn.onclick=showMenu;garageBtn.onclick=openGarage;backGarage.onclick=closeGarage;profileBtn.onclick=()=>openProfileEditor(false);leaderboardBtn.onclick=openLeaderboard;backLeaderboard.onclick=showMenu;document.getElementById('saveProfileBtn').onclick=saveProfile;settingsModal.addEventListener('click',e=>{if(e.target===settingsModal)closeSettings()});profileModal.addEventListener('click',e=>{if(e.target===profileModal&&!profileRequired)closeProfileEditor()});try{draw();}catch(err){console.error('Street Rush render error:',err);ctx.fillStyle='#263b4c';ctx.fillRect(0,0,W,H);ctx.fillStyle='#fff';ctx.font='bold 24px system-ui';ctx.textAlign='center';ctx.fillText('STREET RUSH',W/2,H/2);ctx.font='16px system-ui';ctx.fillText('Нажми «Начать гонку»',W/2,H/2+36);}initOnline();})();
 </script></body></html>
